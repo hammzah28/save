@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Representation | CS Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <h2>Data Representation</h2>
+  <nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../subjects.html">Subjects</a>
+    <a href="../../topics/topic-cs.html">CS Topics</a>
+  </nav>
+</header>
+
+<main class="page notes-page">
+
+<h1>Data Representation (9618)</h1>
+
+<!-- ================== SECTION 1 ================== -->
+<section class="note-section">
+<h2>1. Number Systems</h2>
+
+<h3>Binary</h3>
+<p>
+Binary is a base‑2 number system using only <b>0</b> and <b>1</b>.
+Each digit is called a <b>bit</b>.
+</p>
+
+<h3>Denary</h3>
+<p>
+Denary (decimal) is a base‑10 number system using digits 0–9.
+</p>
+
+<h3>Hexadecimal</h3>
+<p>
+Hexadecimal is a base‑16 system using digits 0–9 and letters A–F.
+</p>
+
+<table class="note-table">
+<tr><th>Hex</th><th>Binary</th></tr>
+<tr><td>A</td><td>1010</td></tr>
+<tr><td>B</td><td>1011</td></tr>
+<tr><td>C</td><td>1100</td></tr>
+<tr><td>D</td><td>1101</td></tr>
+<tr><td>E</td><td>1110</td></tr>
+<tr><td>F</td><td>1111</td></tr>
+</table>
+
+<h3>Conversions</h3>
+<ul>
+  <li>Denary → Binary: divide by 2</li>
+  <li>Binary → Denary: use place values</li>
+  <li>Binary ↔ Hex: group bits in 4s</li>
+</ul>
+</section>
+
+<!-- ================== SECTION 2 ================== -->
+<section class="note-section">
+<h2>2. Binary Arithmetic</h2>
+
+<h3>Binary Addition</h3>
+<ul>
+  <li>0 + 0 = 0</li>
+  <li>0 + 1 = 1</li>
+  <li>1 + 1 = 10 (carry 1)</li>
+</ul>
+
+<h3>Binary Shifts</h3>
+<ul>
+  <li><b>Left shift</b> multiplies by 2</li>
+  <li><b>Right shift</b> divides by 2</li>
+</ul>
+
+<p>
+Bits lost during shifting cause <b>overflow</b>.
+</p>
+</section>
+
+<!-- ================== SECTION 3 ================== -->
+<section class="note-section">
+<h2>3. Representation of Negative Numbers</h2>
+
+<h3>Two’s Complement</h3>
+<ol>
+  <li>Write the positive binary number</li>
+  <li>Invert all bits</li>
+  <li>Add 1</li>
+</ol>
+
+<p>
+The most significant bit (MSB) shows the sign:
+</p>
+<ul>
+  <li>0 → positive</li>
+  <li>1 → negative</li>
+</ul>
+</section>
+
+<!-- ================== SECTION 4 ================== -->
+<section class="note-section">
+<h2>4. Character Sets</h2>
+
+<h3>ASCII</h3>
+<p>
+ASCII uses 7 bits (128 characters). Extended ASCII uses 8 bits.
+</p>
+
+<h3>Unicode</h3>
+<p>
+Unicode supports all world languages. UTF‑8 uses 1–4 bytes.
+</p>
+
+<table class="note-table">
+<tr><th>Character</th><th>ASCII</th></tr>
+<tr><td>A</td><td>65</td></tr>
+<tr><td>a</td><td>97</td></tr>
+<tr><td>0</td><td>48</td></tr>
+</table>
+</section>
+
+<!-- ================== SECTION 5 ================== -->
+<section class="note-section">
+<h2>5. Images</h2>
+
+<h3>Bitmap Images</h3>
+<ul>
+  <li>Made of pixels</li>
+  <li>Each pixel stores colour data</li>
+</ul>
+
+<h3>Resolution</h3>
+<p>
+Number of pixels (width × height).
+</p>
+
+<h3>Colour Depth</h3>
+<p>
+Number of bits per pixel.
+</p>
+
+<p><b>File size formula:</b></p>
+<pre>
+File size = width × height × colour depth
+</pre>
+</section>
+
+<!-- ================== SECTION 6 ================== -->
+<section class="note-section">
+<h2>6. Sound</h2>
+
+<h3>Sampling</h3>
+<p>
+Sampling converts analogue sound into digital.
+</p>
+
+<h3>Sample Rate</h3>
+<p>
+Number of samples per second (Hz).
+</p>
+
+<h3>Sample Resolution</h3>
+<p>
+Number of bits per sample.
+</p>
+
+<p><b>Sound file size:</b></p>
+<pre>
+File size = sample rate × resolution × duration
+</pre>
+</section>
+
+<!-- ================== SECTION 7 ================== -->
+<section class="note-section">
+<h2>7. Data Compression</h2>
+
+<h3>Lossless Compression</h3>
+<ul>
+  <li>No data lost</li>
+  <li>Used for text and code</li>
+  <li>Examples: RLE, Huffman coding</li>
+</ul>
+
+<h3>Lossy Compression</h3>
+<ul>
+  <li>Data is permanently lost</li>
+  <li>Used for images, audio, video</li>
+  <li>Examples: JPEG, MP3</li>
+</ul>
+</section>
+
+<!-- ================== SECTION 8 ================== -->
+<section class="note-section">
+<h2>8. Why Data is Represented Digitally</h2>
+<ul>
+  <li>Efficient storage</li>
+  <li>Fast processing</li>
+  <li>Easy transmission</li>
+  <li>Error detection possible</li>
+</ul>
+</section>
+
+</main>
+
+<footer class="footer">
+  © 2026 Save Your Exams · Data Representation Notes
+</footer>
+
+</body>
+</html>

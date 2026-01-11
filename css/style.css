@@ -1,0 +1,222 @@
+/* =========================
+   GLOBAL RESET & VARIABLES
+   ========================= */
+:root {
+  --bg-main: #0f172a;
+  --bg-card: #111827;
+  --bg-header: #020617;
+
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+
+  --accent-1: #38bdf8;
+  --accent-2: #22c55e;
+  --accent-3: #a855f7;
+
+  --border-color: #1f2933;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY & BACKGROUND
+   ========================= */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background:
+    radial-gradient(circle at top, #1e293b, #020617),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255,255,255,0.02),
+      rgba(255,255,255,0.02) 2px,
+      transparent 2px,
+      transparent 6px
+    );
+  color: var(--text-main);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+.page-header {
+  background: linear-gradient(
+    135deg,
+    #020617,
+    #020617 60%,
+    #1e293b
+  );
+  padding: 3rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.page-header h1 {
+  font-size: 2.6rem;
+  color: var(--accent-1);
+  margin-bottom: 0.6rem;
+}
+
+.page-header p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+.content {
+  max-width: 1000px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+}
+
+/* =========================
+   SECTIONS (CARDS)
+   ========================= */
+section {
+  background: linear-gradient(
+    160deg,
+    var(--bg-card),
+    #020617
+  );
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.8rem;
+  margin-bottom: 2rem;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.02),
+    0 20px 40px rgba(0,0,0,0.6);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+section:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.8),
+    0 0 20px rgba(56,189,248,0.15);
+}
+
+/* =========================
+   HEADINGS
+   ========================= */
+section h2 {
+  color: var(--accent-2);
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+section h3 {
+  color: var(--accent-1);
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+/* =========================
+   TEXT
+   ========================= */
+p {
+  color: var(--text-main);
+  margin-bottom: 0.8rem;
+}
+
+ul {
+  margin-left: 1.2rem;
+}
+
+ul li {
+  margin-bottom: 0.4rem;
+  color: var(--text-main);
+}
+
+/* =========================
+   CODE / FORMULAS
+   ========================= */
+pre {
+  background: #020617;
+  border-left: 4px solid var(--accent-3);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  overflow-x: auto;
+  color: #f8fafc;
+  font-family: Consolas, monospace;
+  font-size: 0.95rem;
+}
+
+/* =========================
+   LINKS
+   ========================= */
+a {
+  color: var(--accent-1);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--accent-2);
+  text-decoration: underline;
+}
+
+/* =========================
+   EXAM TIPS BOX
+   ========================= */
+.exam-tips {
+  border: 2px dashed var(--accent-1);
+  background: linear-gradient(
+    160deg,
+    rgba(56,189,248,0.08),
+    rgba(2,6,23,0.95)
+  );
+}
+
+.exam-tips h2 {
+  color: var(--accent-1);
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+.page-footer {
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-color);
+  background: #020617;
+}
+
+/* =========================
+   SEARCH BAR (IF USED)
+   ========================= */
+.search-bar {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  background: #020617;
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+}
+
+.search-bar::placeholder {
+  color: var(--text-muted);
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 1.4rem;
+  }
+}
